@@ -20,9 +20,12 @@ html {
     --cor-principal-dark: #DDE6ED;
     --cor-secundaria-dark: #9DB2BF;
     --cor-terciaria-dark: #27374D;
+    --cor-quartenaria-dark: #526D82;
     --gradiente-dark: radial-gradient(circle, rgba(45,68,87,1) 0%, rgba(18,36,50,1) 100%);
-    --cor-principal-light: #1C1C1C;
-    --cor-secundaria-light: #2D2D2D;
+    --cor-principal-light: #27374D;
+    --cor-secundaria-light: #526D82;
+    --cor-terciaria-light: #DDE6ED;
+    --cor-quartenaria-light: #9DB2BF;
     --gradiente-light: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%);
     --fs-1: 1.5rem;
     --fs-2: 1rem;
