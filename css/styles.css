@@ -34,10 +34,28 @@ html {
     --fw-2: 400;
 }
 
+.dark {
+    --cor-principal: var(--cor-principal-dark);
+    --cor-secundaria: var(--cor-secundaria-dark);
+    --cor-terciaria: var(--cor-terciaria-dark);
+    --cor-quartenaria: var(--cor-quartenaria-dark);
+    --gradiente: var(--gradiente-dark);
+    transition: 0.500s;
+}
+
+.light {
+    --cor-principal: var(--cor-principal-light);
+    --cor-secundaria: var(--cor-secundaria-light);
+    --cor-terciaria: var(--cor-terciaria-light);
+    --cor-quartenaria: var(--cor-quartenaria-light);
+    --gradiente: var(--gradiente-light);
+    transition: 0.500s;
+}
+
 body {
     display: flex;
-    background: var(--gradiente-dark);
-    color: var(--cor-principal-dark);
+    background: var(--gradiente);
+    color: var(--cor-principal);
     min-height: 100vh;
 }
 
