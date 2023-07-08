@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    font-family: 'Manrope', sans-serif;
+    --cor-principal-dark: #DDE6ED;
+    --cor-secundaria-dark: #9DB2BF;
+    --cor-terciaria-dark: #27374D;
+    --gradiente-dark: radial-gradient(circle, rgba(45,68,87,1) 0%, rgba(18,36,50,1) 100%);
+    --cor-principal-light: #1C1C1C;
+    --cor-secundaria-light: #2D2D2D;
+    --gradiente-light: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%);
+    --fs-1: 1.5rem;
+    --fs-2: 1rem;
+    --fs-3: 0.8rem;
+    --fw-1: 700;
+    --fw-2: 400;
+}
+
+body {
+    display: flex;
+    background: var(--gradiente-dark);
+    color: var(--cor-principal-dark);
+    min-height: 100vh;
+}
+
+/* INFORMAÇÕES PESSOAIS */
+
+.infoPessoal {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: rgba(0, 0, 0, 0.15);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.infoPessoal__img {
+    width: 150px;
+}
+
+.infoPessoal__img img {
+    width: 100%;
+    border-radius: 50%;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+}
+
+.infoPessoal h1 {
+    width: 100%;
+    font-size: var(--fs-1);
+    font-weight: var(--fw-1);
+    margin: 0.25rem 0;
+}
+
+.infoPessoal h2 {
+    width: 100%;
+    font-size: var(--fs-2);
+    font-weight: var(--fw-2);
+    margin: 0.25rem 0;
+}
+
+.infoPessoal__git {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoPessoal__git:hover {
+    transition: 0.250s;
+    transform: scale(1.1);
+    color: var(--cor-secundaria-dark);
+}
+
+
