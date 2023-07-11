@@ -26,6 +26,7 @@ html {
         rgba(45, 68, 87, 1) 0%,
         rgba(18, 36, 50, 1) 100%
     );
+    --hover-background-dark: rgba(255, 255, 255, 0.25);
     --cor-principal-light: #27374d;
     --cor-secundaria-light: #526d82;
     --cor-terciaria-light: #dde6ed;
@@ -35,6 +36,7 @@ html {
         rgba(255, 255, 255, 1) 0%,
         rgba(255, 255, 255, 1) 100%
     );
+    --hover-background-light: rgba(0, 0, 0, 0.25);
     --fs-1: 1.5rem;
     --fs-2: 1rem;
     --fs-3: 0.8rem;
@@ -48,6 +50,7 @@ html {
     --cor-terciaria: var(--cor-terciaria-dark);
     --cor-quartenaria: var(--cor-quartenaria-dark);
     --gradiente: var(--gradiente-dark);
+    --hover-background: var(--hover-background-dark);
     transition: 0.5s;
 }
 
@@ -57,6 +60,7 @@ html {
     --cor-terciaria: var(--cor-terciaria-light);
     --cor-quartenaria: var(--cor-quartenaria-light);
     --gradiente: var(--gradiente-light);
+    --hover-background: var(--hover-background-light);
     transition: 0.5s;
 }
 
@@ -239,6 +243,7 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
+    gap: 2rem;
 }
 
 .minhaJornada__card-item {
@@ -263,6 +268,92 @@ body {
 }
 
 /* INSPIRAÇÕES */
+
+.networking {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-top: 2rem;
+}
+
+.networking__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.networking__container h2 {
+    font-size: var(--fs-1);
+    font-weight: var(--fw-1);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.networking__lista {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    gap: 2rem;
+}
+
+.networking__item {
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.networking__item a {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: var(--cor-principal);
+    row-gap: 0.5rem;
+
+}
+
+.networking__item h3 {
+    font-size: var(--fs-2);
+    font-weight: var(--fw-1);
+    text-transform: uppercase;
+}
+
+.networking__item p {
+    display: none;
+    font-size: var(--fs-2);
+    font-weight: var(--fw-2);
+}
+
+.networking__item a:hover > p {
+    display: block;
+}
+
+.networking__item:hover {
+    transition: 0.25s;
+    background-color: var(--hover-background);
+    cursor: pointer;
+}
+
+.networking__item img {
+    width: 125px;
+    border-radius: 50%;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+}
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 578px) {
@@ -314,5 +405,19 @@ body {
     .minhaJornada__card-lista {
         justify-content: center;
         row-gap: 1.5rem;
+    }
+
+    .networking__container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .networking__lista {
+        justify-content: center;
+        row-gap: 1.5rem;
+    }
+
+    .networking__item a p {
+        display: block;
     }
 }
