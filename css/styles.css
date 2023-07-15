@@ -255,10 +255,35 @@ body {
     row-gap: 1rem;
 }
 
-.minhaJornada__card-item img {
+.img{
     width: 250px;
     height: 150px;
     filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+}
+
+.feira{
+    background-image: url("../assets/images/feira.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.quartel {
+    background-image: url("../assets/images/entrada-quartel.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.casamento {
+    background-image: url("../assets/images/casamento.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tech {
+    background-image: url("https://images.unsplash.com/photo-1542762933-ab3502717ce7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .minhaJornada__card-item p {
@@ -355,6 +380,31 @@ body {
     filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
 }
 
+.whats-button {
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+}
+
+.whats-button button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-principal);
+    font-size: 30px;
+    font-weight: var(--fw-1);
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.whats-button button:hover {
+    transition: 0.25s;
+    transform: scale(1.1);
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 578px) {
     body {
@@ -372,6 +422,73 @@ body {
         width: 100%;
         padding: 2rem;
         text-align: center;
+    }
+
+    .infoPessoal__img {
+        width: 150px;
+    }
+
+    .sobreMim {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sobreMim__card-info {
+        text-align: center;
+    }
+
+    .sobreMim__card-info_local,
+    .sobreMim__card-info_contato a,
+    .sobreMim__card-info_email a,
+    .sobreMim__card-info_linkedin a {
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    .container {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .minhaJornada__container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .minhaJornada__card-lista {
+        justify-content: center;
+        row-gap: 1.5rem;
+    }
+
+    .networking__container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .networking__lista {
+        justify-content: center;
+        row-gap: 1.5rem;
+    }
+
+    .networking__item a p {
+        display: block;
+    }
+}
+
+@media screen and (min-width:578px) and (max-width: 768px) {
+    .infoPessoal__img {
+        max-width: 100px;
+    }
+
+    .minhaJornada__card-lista {
+        justify-content: center;
+        row-gap: 1.5rem;
+    }
+
+    .networking__lista {
+        justify-content: center;
+        row-gap: 1.5rem;
     }
 
     .sobreMim {
